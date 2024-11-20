@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+    <head>
+        <title>Panier • T-Square</title>
+        <meta name="description" content="Vente de produits tech">
+        <meta charset="utf-8">
+        <link rel="icon" href="../image/logo.png">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="../index.html">
+                <img src="../image/logo.png" alt="T-Square Logo" class="headerLogo">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="product.html">Produits</a></li>
+                </ul>
+            </nav>
+
+            <div class="headerContainer">
+                <div class="headerSearch">
+                    <input type="text" placeholder="Rechercher un produit...">
+                    <img src="../image/search.png" alt="Search Icon">
+                </div>
+
+                <a href="cart.html" class="headerCart">
+                    🛒 Panier
+                </a>
+
+                <a href="login.html" class="headerAccount">
+                    🧑‍💼 Compte
+                </a>
+            </div>
+
+        </header>
+
+        <div class="home">
+            <h1>Panier</h1>
+            <div class="cartContent">
+                <ul>
+                    <li>
+                        <span>Produit 1</span> - <span>10</span>€ - 
+                        <input type="number" min="1">
+                        <button">Supprimer</button>
+                    </li>
+                </ul>
+
+                <p>Total : <span></span>€</p>
+                <p>Quantité totale : <span></span></p>
+                
+                <form action="order.php" method="POST">
+                    <input type="hidden" name="cart_id" value="#">
+                    <button type="submit">Commander</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <div class="footerContent">
+                <div class="footerLogo">
+                    <img src="../image/logo.png" alt="T-Square">
+                    <span>T-Square</span>
+                </div>
+                <div class="footerSocial">
+                    <a href="#" class="social-icon">
+                        <img src="../image/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="../image/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="../image/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="../image/tiktok.png" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+            <div class="footerLinks">
+                <a href="#">Mentions légales</a>
+                <a href="#">Déclaration de confidentialité</a>
+                <a href="#">Politique de cookies</a>
+                <a href="#">Plan du site</a>
+            </div>
+            <div class="footerCopyright">
+                <p>Copyright © 2024</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
